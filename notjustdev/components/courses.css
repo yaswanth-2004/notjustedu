@@ -1,0 +1,287 @@
+.title{
+    padding-top: 3rem;
+    text-align: center;
+    
+}
+.courseimg{
+    height: 18rem;
+    width: auto;
+    float: left;
+    margin-left: 10rem;
+}
+.blog{
+    height: 22rem;
+    background-color: red;
+    margin: 20px 50px 0 50px;
+}
+.container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+.nft {
+    user-select: none;
+    max-width: 300px;
+    margin: 5rem auto;
+    border: 1px solid #ffffff22;
+    background-color: #282c34;
+    background: linear-gradient(0deg, rgba(40, 44, 52, 1) 0%, rgba(17, 0, 32, .5) 100%);
+    box-shadow: 0 7px 20px 5px #00000088;
+    border-radius: .7rem;
+    backdrop-filter: blur(7px);
+    -webkit-backdrop-filter: blur(7px);
+    overflow: hidden;
+    transition: .5s all;
+  
+    hr {
+      width: 100%;
+      border: none;
+      border-bottom: 1px solid #88888855;
+      margin-top: 0;
+    }
+  
+    ins {
+      text-decoration: none;
+    }
+  
+    .main {
+      display: flex;
+      flex-direction: column;
+      width: 90%;
+      padding: 1rem;
+  
+      .tokenImage {
+        border-radius: .5rem;
+        max-width: 100%;
+        height: 200px;
+        object-fit: cover;
+      }
+  
+      .description {
+        margin: .5rem 0;
+        color: #a89ec9;
+      }
+  
+      .tokenInfo {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+  
+        .price {
+          display: flex;
+          align-items: center;
+          color: #ee83e5;
+          font-weight: 700;
+  
+          ins {
+            margin-left: -.3rem;
+            margin-right: .5rem;
+          }
+        }
+  
+        .duration {
+          display: flex;
+          align-items: center;
+          color: #a89ec9;
+          margin-right: .2rem;
+  
+          ins {
+            margin: .5rem;
+            margin-bottom: .4rem;
+          }
+        }
+      }
+  
+      
+    }
+  
+    ::before {
+      position: fixed;
+      content: "";
+      box-shadow: 0 0 100px 40px #ffffff08;
+      top: -10%;
+      left: -100%;
+      transform: rotate(-45deg);
+      height: 60rem;
+      transition: .7s all;
+    }
+  
+    &:hover {
+      border: 1px solid #ffffff44;
+      box-shadow: 0 7px 50px 10px #000000aa;
+      transform: scale(1.015);
+      filter: brightness(1.3);
+  
+      ::before {
+        filter: brightness(.5);
+        top: -100%;
+        left: 200%;
+      }
+    }
+  }
+  
+  .bg {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  
+    h1 {
+      font-size: 20rem;
+      filter: opacity(0.5);
+    }
+  }.nft {
+  user-select: none;
+  max-width: 300px;
+  margin: 1rem auto;
+  border: 1px solid #ffffff22;
+  background-color: #282c34;
+  background: linear-gradient(0deg, rgba(40, 44, 52, 1) 0%, rgba(17, 0, 32, .5) 100%);
+  box-shadow: 0 7px 20px 5px #00000088;
+  border-radius: .7rem;
+  backdrop-filter: blur(7px);
+  -webkit-backdrop-filter: blur(7px);
+  overflow: hidden;
+  transition: .5s all;
+  .main {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    padding: 1rem;
+
+    .tokenImage {
+      border-radius: .5rem;
+      max-width: 100%;
+      height: 250px;
+      object-fit: cover;
+    }
+
+    .description {
+      margin: .5rem 0;
+      color: #a89ec9;
+    }
+
+    
+
+
+  }
+
+  ::before {
+    position: fixed;
+    content: "";
+    box-shadow: 0 0 100px 40px #ffffff08;
+    top: -10%;
+    left: -100%;
+    transform: rotate(-45deg);
+    height: 60rem;
+    transition: .7s all;
+  }
+
+  &:hover {
+    border: 1px solid #ffffff44;
+    box-shadow: 0 7px 50px 10px #000000aa;
+    transform: scale(1.015);
+    filter: brightness(1.3);
+
+    ::before {
+      filter: brightness(.5);
+      top: -100%;
+      left: 200%;
+    }
+  }
+}
+
+.btn {
+	position: relative;
+	top: 0;
+	left: 0;
+	width: 200px;
+	height: 40px;
+	margin: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+  margin-left: 2rem;
+}
+.btn a {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	box-shadow: 0 15px 15px rgba(0, 0, 0, 0.3);
+	border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+	border-top: 1px solid rgba(255, 255, 255, 0.1);
+	border-radius: 30px;
+	padding: 0.5px;
+	letter-spacing: 1px;
+	text-decoration: none;
+	color: #fff;
+	z-index: 1;
+	transition: 0.5s;
+	backdrop-filter: blur(15px);
+}
+.btn:hover a {
+	letter-spacing: 3px;
+}
+.btn a::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 50%;
+	height: 100%;
+	background: linear-gradient(to left, rgba(255, 255, 255, 0.15), transparent);
+	transform: skewX(45deg) translate(0);
+	transition: 0.5s;
+	filter: blur(0px);
+}
+.btn:hover a::before {
+	transform: skewX(45deg) translate(200px);
+}
+.btn::before {
+	content: "";
+	position: absolute;
+	left: 50%;
+	transform: translatex(-50%);
+	border-radius: 10px;
+	transition: 0.5s;
+	transition-delay: 0.5;
+}
+.btn:hover::before /*lightup button*/ {
+	bottom: 0;
+	height: 50%;
+	width: 80%;
+	border-radius: 30px;
+}
+
+.btn::after {
+	content: "";
+	position: absolute;
+	left: 50%;
+	transform: translatex(-50%);
+	
+	transition: 0.5s;
+	transition-delay: 0.5;
+}
+.btn:hover::after {
+	top: 0;
+	height: 50%;
+	width: 80%;
+	border-radius: 30px;
+}
+
+
+
+
+
+
+
+
+
+
