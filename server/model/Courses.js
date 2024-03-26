@@ -4,10 +4,10 @@ const CourseSchema = new mongoose.Schema({
     desc:{
         type:String
     },
-    img:{
+    title:{
         type:String
     },
-    title:{
+    month:{
         type:String
     }
 })

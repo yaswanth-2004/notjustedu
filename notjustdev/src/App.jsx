@@ -1,10 +1,10 @@
 import { useState } from 'react'
-import Navbar from '../components/navbar'
+import Navbar from '../components/Navbar.jsx'
 import './App.css'
-import Courses from '../components/courses'
+import Courses from '../components/Courses.jsx'
 import Home from '../components/Home.jsx'
 import { BrowserRouter as  Router,Routes,Route } from 'react-router-dom'
-import Fullcourse from './pages/fullcourse.jsx'
+import Fullcourse from './pages/Fullcourse.jsx'
 
 
 function App() {

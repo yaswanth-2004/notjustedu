@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import Navbar from "./navbar";
-import Courses from "./courses";
+import Navbar from "./Navbar.jsx";
+import Courses from "./Courses.jsx";
 import Blog from "./Blog";
 import axios from "axios"
 import { useEffect } from "react";
@@ -9,22 +9,20 @@ import { useEffect } from "react";
 
 
 const Home = () =>{
-  const [course, setCourse] = useState([]);
+  const [course, setCourse] = useState([])
 
   useEffect(() => {
     const fetchData = async () => {
       try {
         const response = await axios.get('http://localhost:3001/course');
         setCourse(response.data);
+        console.log(response.data);
       } catch (error) {
         console.log(error);
       }
     };
     fetchData();
   }, []);
-
-
-  console.log(course)
 
     return(
       <div className='nav'>
@@ -44,9 +42,11 @@ const Home = () =>{
       </div>
       <h1 className="title">Paid Courses</h1>
       <div className="container">
-        <Courses/>
-        <Courses/>
-        <Courses/>
+        {course.map(val=>(
+          <Courses title={val.title} desc={val.desc} month={val.month}/>
+        ))}
+        
+      
       </div>
 
 
